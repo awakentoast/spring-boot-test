@@ -66,12 +66,10 @@ function makeProduct() {
                 available: true
             },
             {
-                available: false
+                available: true
             }
-            // Add more items as needed
         ]
     };
-
 }
 
 const product = {
@@ -80,10 +78,16 @@ const product = {
 }
 
 const items = {
-    available: true
+    available: true,
+    type: "not available"
+}
+const items2 = {
+    available: false,
+    type: "available"
 }
 
 product.items.push(items);
+product.items.push(items2)
 
 
 async function productPost() {
